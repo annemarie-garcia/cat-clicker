@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body>
+        <h1>An introduction to Spidercat</h1>
+
+        <p>Five years ago I rescued a stray cat called Spider - affectionalty nicknamed Spidercat. This is a page about her. She may not photograph well but she has the sweetest personality! Click on the menu to choose an item, then click the images that you like the most.</p>
+
+
+        <h2 id="cat-name"></h2>
+        <div class="column" id="column1">
+            <ul id="catList"></ul>
+            <hr>
+            <p>Use the admin mode to update the model directly.</p>
+            <button id="admin-mode" type="button">Admin Mode</button>
+
+            <div id="admin-section">
+                <form id="admin-mode">
+                    <label for="name">Cat Name:</label> <input type="text" id="name" /><br/>
+                    <label for="url">Url:</label> <input type="text" id="url"/><br/>
+                    <label for="clicks">Number of clicks: </label><input type="text" id="clicks" /><br/><br/>
+                    <button type="button" value="Submit" id="submit">Submit</button>
+                    <button type="button" value="Cancel" id="cancel">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="column" id="column2">
+            <img src="" id="cat-img" />
+            <p>Number of clicks: <span id='counter'></span></p>
+        </div>
+        <script src="javascript/script.js" ></script>
+    </body>
+</html>
+
